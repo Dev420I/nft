@@ -50,10 +50,18 @@ function NFTDropPage () {
             <hr className='my-2 border'/>
         {/*Content*/}
 
-            <div>
+            <div className='mt-10 flex flex-1 flex-col items-center
+            space-y-6 text-center lg:justify-center lg:space-y-0'>
+                <img className='w-80 object-cover pb-5 lg:h-40' src="https://links.papareact.com/bdy" alt=""/>
 
+                <h1 className='text-3xl font-bold lg:text-5xl
+                lg:font-extrabold'> The DAV420I Ape Config Club | NFT Drop</h1>
+
+                <p className='pt-2 text-xl text-green-500/70'> 13 / 20 NFT's claimed</p>
             </div>
         {/*Mint Button*/}
+
+
 
         </div>
 
