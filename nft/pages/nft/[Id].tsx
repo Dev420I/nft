@@ -51,13 +51,20 @@ function NFTDropPage () {
                      NFT Market Place
                 </h1>
 
-                <button onClick={() => connectWithMetamask()}
+                <button onClick={() => address ? disconnect () : connectWithMetamask()}
                         className='rounded-full bg-rose-400 px-4 py-2
                 text-xs font-bold text-white lg:px-5 lg:py-3
-                lg:text-base'>Sign In</button>
+                lg:text-base'>
+                    {address ?  'Sign Out' : 'Sign in' }
+                </button>
+
             </header>
 
             <hr className='my-2 border'/>
+            {address && (
+                <p className='text-center text-sm text-rose-400 '>You're Logged in with wallet {address.substring(0, 5)}...{address.substring(address.length - 5)}
+                </p>
+            )}
         {/*Content*/}
 
             <div className='mt-10 flex flex-1 flex-col items-center
